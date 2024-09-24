@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Test</h1>
+        <div class="name-section">
+            <label for="studentName">Enter your name:</label>
+            <input type="text" id="studentName" placeholder="Your Name">
+        </div>
+
+        <!-- Display Student's Name -->
+        <p id="displayName"></p>
+
+        <!-- Question 1 (Yes/No using checkboxes) -->
+        <div class="question">
+            <p>1. AI stands for?</p>
+            <input type="checkbox" id="artificialIntelligence" value="Artificial intelligence">
+            <label for="artificialIntelligence">Artificial intelligence</label>
+            
+            <input type="checkbox" id="articalIntelligent" value="Artical Intelligent">
+            <label for="articalIntelligent">Artical Intelligent</label>
+        </div>
+        
+        <!-- Question 2 (Dropdown) -->
+        <div class="question">
+            <p>2. What data include in supervised learning?</p>
+            <select id="question2">
+                <option value="">--Select an answer--</option>
+                <option value="label">label</option>
+                <option value="unlabel">unlabel</option>
+                <option value="features">features</option>
+                <option value="dataset">dataset</option>
+            </select>
+        </div>
+        
+        <button onclick="checkAnswers()">Save</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
